@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Familjen+Grotesk:wght@400;600;700&family=Poppins:wght@300;500&family=Roboto&display=swap');
+
+:root {
+  --background: #1a1b1c;
+  --mainTextColor: #fff;
+  --secondaryTextColor: #ccc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--background);
+}
+
+nav a {
+  display: inline-block;
+  margin: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--secondaryTextColor);
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: red;
+}
+
+span {
+  font-weight: 500px;
+  color: #fff;
+  font-size: 20px;
+}
+
+h2 {
+  color: #fff;
+  margin: 30px 0;
+}
+
+h3 {
+  color: #ccc;
+  margin: 30px 0;
+  /* font-size: 14px; */
+}
+
+hr {
+  border-top: none;
+  border-bottom: 0.1px solid #c8cbcc;
+  /* margin-bottom: 100px; */
+  margin: 70px 0;
+}
+
+li {
+  margin-left: 50px;
+  color: var(--secondaryTextColor);
+  font-size: 16px;
+  line-height: 2;
+}
+
+/* Home-Welcome */
+.section-welcome {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  margin: 70px 0;
+}
+
+.section-welcome h1 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.section-welcome p {
+  margin-bottom: 50px;
+}
+
+#JY-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.welcome {
+  color: var(--secondaryTextColor);
+  padding-left: 40px;
+  line-height: 1.5;
+}
+
+#JY {
+  color: var(--mainTextColor);
+}
+
+#download {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
+}
+
+#download:hover {
+  color: red;
+  background: #4c4b4b;
+}
+
+/* Skills */
+.section-tech {
+  color: var(--secondaryTextColor);
+  margin-bottom: 20px;
+}
+
+.techSkills {
+  border: 1px solid var(--secondaryTextColor);
+  border-radius: 0.6rem;
+  padding: 0.6rem;
+  margin-right: 0.8rem;
+  margin-bottom: 0.8rem;
+  display: inline-block;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.section-tech a {
+  color: var(--secondaryTextColor);
+  font-size: 24px;
+  color: #e08e8e;
+}
+
+.section-tech a:hover {
+  color: red;
+}
+
+.IT {
+  margin: 50px 0;
+}
+
+#link {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+.education {
+  margin-bottom: 50px;
+}
+
+/* Interests */
+#interestTitle {
+  margin-top: 30px;
+}
+
+.interests img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+#travel img:hover {
+  scale: 1.1;
+}
+
+.interests {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.singleInterest {
+  display: flex;
+  line-height: 2.5;
+}
+
+.singleInterest img {
+  display: flex;
+}
+
+.singleInterest a {
+  text-align: center;
+  text-decoration: none;
+  color: var(--secondaryTextColor);
+}
+
+/* Contact */
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-logo a:hover {
+  scale: 1.2;
+}
+
+.contact-logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 40px;
+}
+
+#contactTitle {
+  font-size: 50px;
+  text-align: center;
+  margin: 30px;
+  font-family: 'Dancing Script';
+}
+
+/* Footer */
+.footer {
+  color: var(--secondaryTextColor);
+  margin: 30px auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .singleInterest {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-logo img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 1.5rem;
+  }
+
+  #contactTitle {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 501px) {
+  nav a {
+    font-size: 0.8rem;
+  }
+
+  .section-welcome {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #JY-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .interests img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .singleInterest {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-logo img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 1rem;
+  }
+
+  #contactTitle {
+    font-size: 30px;
+  }
+}
