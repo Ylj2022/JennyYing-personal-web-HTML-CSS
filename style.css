@@ -136,10 +136,10 @@ li {
 
 .techSkills {
   border: 1px solid var(--secondaryTextColor);
-  border-radius: 0.6rem;
-  padding: 0.6rem;
-  margin-right: 0.8rem;
-  margin-bottom: 0.8rem;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   display: inline-block;
 }
 
@@ -147,10 +147,14 @@ li {
   margin-bottom: 20px;
 }
 
+.pro-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
 .section-tech a {
   color: var(--secondaryTextColor);
-  font-size: 24px;
-  color: #e08e8e;
+  font-size: 16px;
+  color: #5883bc;
 }
 
 .section-tech a:hover {
@@ -264,6 +268,7 @@ li {
 @media only screen and (max-width: 501px) {
   nav a {
     font-size: 0.8rem;
+    margin: 5px;
   }
 
   .section-welcome {
